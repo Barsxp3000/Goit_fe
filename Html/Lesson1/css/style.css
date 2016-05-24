@@ -1,0 +1,39 @@
+body {
+    background-color: #EFEFEF;
+}
+.page {
+    background-color: #EFEFEF;
+}
+.list {
+    width: 415px;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px #DEDEDE;
+    margin: 5px auto 50px auto;
+    padding: 30px 50px;
+    background-color: #ffffff;
+}
+.foto {
+    text-align: center;
+}
+.foto p {
+    text-align: left;
+}
+.question {
+    line-height: 27px;
+}
+.question ul {
+    padding-top: 10px;
+    margin-left: -5px;
+}
+.contacts {
+    line-height: 10px;
+    margin: 30px 0;
+}
+.feedback {
+    line-height: 8px;
+    margin: 31px 0 0 0;
+}
+.foto img {
+    width: 150px;
+    height: 150px;
+}
