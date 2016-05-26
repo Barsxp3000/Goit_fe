@@ -1,39 +1,43 @@
-body {
-    background-color: #EFEFEF;
+* {
+    margin: 0;
+    padding: 0;
 }
-.page {
-    background-color: #EFEFEF;
+body {
+    background-color: #efefef;
 }
 .list {
+    background-color: white;
     width: 415px;
+    margin: 0 auto;
     border: 1px solid #CFCFCF;
     box-shadow: 0 0 2px #DEDEDE;
-    margin: 5px auto 50px auto;
-    padding: 30px 50px;
-    background-color: #ffffff;
+    padding: 50px;
 }
-.foto {
+div {
+    border-top: 1px solid #7b7b7b;
+    line-height: 30px;
+    padding: 10px 0;
+}
+p {
+    margin: 0 10px;
+}
+a {
+    margin: 0 10px;
+}
+.aboutme {
     text-align: center;
+    border-top: none;
+    padding: 0;
 }
-.foto p {
+.aboutme img {
+    width: 150px;
+}
+.aboutme p {
     text-align: left;
 }
-.question {
-    line-height: 27px;
-}
 .question ul {
-    padding-top: 10px;
-    margin-left: -5px;
+    margin: 0 30px;
 }
-.contacts {
-    line-height: 10px;
-    margin: 30px 0;
-}
-.feedback {
-    line-height: 8px;
-    margin: 31px 0 0 0;
-}
-.foto img {
-    width: 150px;
-    height: 150px;
+.question p {
+    margin: 0 10px;
 }
