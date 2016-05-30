@@ -7,6 +7,9 @@
 
 /*Main page*/
 
+html, body {
+    height: 100%;
+}
 body {
     background-color: #f9f9f9;
     font-family: OpenSans;
@@ -14,12 +17,18 @@ body {
 
 /*Page content*/
 
-.page {
+.wraper {
+    display: table;
+    height: 100%;
     margin: 0 auto;
     padding: 0 45px;
     width: 965px;
     background-color: #ffffff;
     box-shadow: 0 0px 0px rgba(0, 0, 0, .3), -23px 0 20px -30px rgba(0, 0, 0, .8), 23px 0 20px -30px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.page {
+    display: table-row;
+    height: 100%;
 }
 
 /*Logo*/
@@ -37,9 +46,12 @@ body {
 
 /*Header menu*/
 
+.menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .menu {
-    position: relative;
-    overflow: hidden;
     background: rgba(94, 94, 94, 1);
     background: -moz-linear-gradient(top, rgba(94, 94, 94, 1) 0%, rgba(68, 67, 67, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(94, 94, 94, 1)), color-stop(100%, rgba(68, 67, 67, 1)));
@@ -49,18 +61,22 @@ body {
     background: linear-gradient(to bottom, rgba(94, 94, 94, 1) 0%, rgba(68, 67, 67, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343', GradientType=0);
 }
-.h_link li {
+.menu li {
     float: left;
 }
-.h_link a {
+.menu a {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     text-shadow: -2px 1px 2px rgba(0, 0, 0, 1);
     display: block;
     color: white;
     line-height: 40px;
+    width: 55px;
     padding: 0 42px;
     text-decoration: none;
+    text-align: center;
     font-size: 15px;
-}
+  }
 .menu a:hover {
     background: rgba(74, 74, 74, 1);
     background: -moz-linear-gradient(top, rgba(74, 74, 74, 1) 0%, rgba(46, 46, 46, 1) 100%);
@@ -70,6 +86,8 @@ body {
     background: -ms-linear-gradient(top, rgba(74, 74, 74, 1) 0%, rgba(46, 46, 46, 1) 100%);
     background: linear-gradient(to bottom, rgba(74, 74, 74, 1) 0%, rgba(46, 46, 46, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e', GradientType=0);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
 }
 
 /*Left menu*/
@@ -101,18 +119,19 @@ body {
 
 /*Container*/
 
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .content {
     float: right;
     width: 675px;
 }
-.content p {
+.description {
     line-height: 21px;
     font-size: 15px;
     padding: 40px 20px;
-}
-.container {
-    position: relative;
-    overflow: hidden;
 }
 .content-photo {
     border: 1px solid #c8c8c8;
@@ -133,10 +152,13 @@ body {
 
 /*Footer menu*/
 
+.f_link:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .f_link {
     background: #e1e1e1;
-    position: relative;
-    overflow: hidden;
 }
 .f_link li {
     float: left;
