@@ -13,6 +13,9 @@ body {
 ul {
     list-style: none;
 }
+a {
+  text-decoration: none;
+}
 .wraper {
     display: table;
     height: 100%;
@@ -61,31 +64,45 @@ ul {
     float: right;
     width: 156px;
     font-size: 12px;
+        color: #128aa7;
+
 }
-.contact a {}
+.contact h4{
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+.contact a {
+    line-height: 20px;
+    color: #128aa7;
+}
+.contact img{
+  vertical-align: middle;
+  padding-right:  5px;
+}
 
 /*Flagi stran*/
 
 .country {
-    margin-right: 35px;
-    margin-top: 35px;
+    margin-right: 27px;
+    margin-top: 22px;
     float: right;
     clear: right;
 }
+.country img{
+  text-align: center;
+}
 .country li {
+  width: 53px;
     display: inline-block;
-    padding-right: 8px;
-}
-.country p {
-    margin-right: -4px;
     text-align: center;
-    line-height: 1px;
+    text-decoration: none;
+  }
+.country span{
+  display: block;
+  font-size: 10px;
+  color: #128aa7;
+  text-decoration: underline;
 }
-.country a {
-    font-size: 10px;
-    color: #128aa7;
-}
-
 /*main photo*/
 
 .promo {
