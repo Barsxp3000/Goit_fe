@@ -163,9 +163,18 @@ a {
 
 .news {
     width: auto;
+    color: #424c43;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: justify;
 }
+.news h4{
+text-align: center;
+font-size: 18px;
+}
+
 .news div {
-    padding: 16px 25px 16px 15px;
+    padding: 15px 20px;
     border-right: 1px solid #c7cacf;
     border-left: 1px solid #c7cacf;
     width: 210px;
