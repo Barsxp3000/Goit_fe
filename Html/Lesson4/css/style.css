@@ -22,7 +22,7 @@ a {
     margin: 0 auto;
     width: 1000px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.8)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8)
 }
 
 /*site page*/
@@ -168,12 +168,13 @@ a {
     line-height: 24px;
     font-size: 14px;
     text-align: justify;
+    overflow: hidden;
 }
-.news h4{
-text-align: center;
-font-size: 18px;
+.news h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
 }
-
 .news div {
     padding: 15px 20px;
     border-right: 1px solid #c7cacf;
@@ -181,6 +182,8 @@ font-size: 18px;
     width: 210px;
     background-color: #edeef0;
     box-sizing: border-box;
+    margin-bottom: -100500px;
+    padding-bottom: 100500px;
 }
 .left {
     float: left;
