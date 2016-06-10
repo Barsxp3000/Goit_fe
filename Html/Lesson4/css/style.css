@@ -16,6 +16,11 @@ ul {
 a {
     text-decoration: none;
 }
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 .wraper {
     display: table;
     height: 100%;
@@ -32,29 +37,24 @@ a {
     height: 100%;
 }
 
-/*header*/
-
-.header {
-    height: 175px;
-}
-
 /*logo*/
 
 .logo {
-    position: relative;
+  padding: 11px 0 0 28px;
+  line-height: 0;
+    float: left;
 }
-.logo a {
-    position: absolute;
-    left: 26px;
-    top: 12px;
-    z-index: 1;
-}
+
 .logo p {
-    position: absolute;
-    left: 96px;
-    top: 110px;
-    font-size: 12px;
-    color: #128aa7;
+  width: 120px;
+  position:relative;
+top: -40px;
+left: 70px;
+}
+
+.logo a{
+  font-size: 12px;
+  color: #128aa7;
 }
 
 /*Contacts*/
@@ -82,8 +82,7 @@ a {
 /*Flagi stran*/
 
 .country {
-    margin-right: 27px;
-    margin-top: 22px;
+    margin: 23px 27px 5px 0;
     float: right;
     clear: right;
 }
@@ -106,22 +105,21 @@ a {
 /*main photo*/
 
 .promo {
+
     border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
+    line-height: 0;
 }
-
-/*menu*/
 
 .menu {
     position: relative;
     background: linear-gradient(to bottom, rgb(55, 55, 55) 0%, rgb(48, 48, 48) 100%);
     width: 100%;
-    height: 30px;
-    margin: -3px 0 0 0;
     border-bottom: 1px solid black;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
     z-index: 2;
     box-sizing: border-box;
+    z-index: 1;
 }
 .menu li {
     float: left;
@@ -154,11 +152,6 @@ a {
     color: #d5d5d5;
     text-decoration: none;
 }
-.menu:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /*content*/
 
@@ -175,7 +168,7 @@ a {
     font-size: 18px;
     line-height: 24px;
 }
-.news div {
+.news_left, .news_right {
     padding: 15px 20px;
     border-right: 1px solid #c7cacf;
     border-left: 1px solid #c7cacf;
@@ -185,26 +178,24 @@ a {
     margin-bottom: -100500px;
     padding-bottom: 100500px;
 }
-.left {
+.news_left {
     float: left;
 }
-.right {
+.news_right {
     float: right;
 }
-.news:after {
-    content: "";
-    display: block;
-    clear: both;
+.news_middle {
+  padding-top: 10px;
+  margin: 0 auto;
+  width:  55%;
 }
 .footer {
-    height: 30px;
+    line-height: 30px;
 }
 .footer p {
-    height: 30px;
     color: #cee3ec;
     font-size: 12px;
     text-align: center;
-    line-height: 30px;
 }
 .footer a {
     color: #cee3ec;
