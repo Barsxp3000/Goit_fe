@@ -1,0 +1,35 @@
+table {
+    border: 11px solid white;
+    border-collapse: collapse;
+}
+td {
+	padding: 0 40px;
+	border: 9px solid black;
+}
+.picture {
+    margin: 0 auto;
+}
+.white {
+    background: white;
+}
+.yellow {
+    background: yellow;
+}
+.red {
+    background: red;
+}
+.black {
+    background: black;
+}
+.blue {
+    background: blue;
+}
+.row-height-1 {
+    height: 40px;
+}
+.row-height-2 {
+    height: 70px;
+}
+.row-height-4 {
+    height: 140px;
+}

@@ -24,15 +24,57 @@
 <div class="menu_signin">
   <p>Ola!<a href="#">Entrar</a></p>
   <p>ou<a href="#">Cadastre-se</a></p>
-<footer class="clearfix">
-
-</footer>
 </div>
 </header>
+<form class="form" action="" name="cadastre" id="cadastre" method="POST">
+    <h2>Cadastre-se</h2>
+    <hr>
 
-<div class="form">
+    <!--Фейсбук-->
+
+   <input type="image" src="img/facebook.png" alt="facebook" name="facebook">
+
+     <!--Надпись OU-->
+
+     <div class="ou">OU</div>
+
+    <!--Поля формы-->
+
+    <div>
+      <input type="text" name="first_name" id="first_name" placeholder="First Name" required maxlength="40">
+    </div>
+    <div>
+      <input type="text" name="last_name" id="last_name" placeholder="Last name" required maxlength="40">
+    </div>
+    <div>
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+    </div>
+    <div>
+      <input type="password" name="password" id="password" placeholder="Choose Password" required maxlength="20">
+    </div>
+
+    <div>
+      <input type="password" name="confirm" id="confirm" placeholder="Password Confirm" required maxlength="20">
+    </div>
+
+
+
+    <div class="checkbox">
+      <input type="checkbox" name="checkbox">
+      <span>Send me Youbike updates and tips</span>
+    </div>
+
+    <!--Кнопка "Создать аккаунт"-->
+
+    <input type="submit" value="Create my account" name="account" class="account">
+
+    <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy </p>
+
+  </form>
 
 </div>
+<footer class="clearfix">
+</footer>
 </div>
 <body>
 
