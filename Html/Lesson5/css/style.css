@@ -1,3 +1,5 @@
+/*Шрифты*/
+
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue-thin-webfont.eot');
@@ -32,6 +34,9 @@ header {
     display: table;
     clear: both;
 }
+
+/*Меню*/
+
 .menu * {
     display: inline-block;
 }
@@ -75,20 +80,19 @@ header {
 .menu_signin a:hover {
     text-decoration: underline;
 }
+
+/*Форма входа*/
+
 .form {
-    position: absolute;
+    position: relative;
+    margin: 100px auto;
     width: 560px;
-    height: 610px;
-    top: 50%;
-    left: 50%;
-    margin-left: -280px;
-    margin-top: -305px;
     text-align: center;
     background: rgba(0, 0, 0, 0.63);
     border: 1px solid black;
 }
 h2 {
-    color: #ffffff;
+    color: #fff;
     padding: 15px;
     letter-spacing: 1px;
     font-size: 24px;
@@ -106,10 +110,10 @@ input[type="image"] {
     padding: 7px 15px;
     border-left: 1px solid #4d66a6;
 }
-hr {
-    height: 1px;
-    background-color: #fff;
-    margin-bottom: 40px;
+.form__line{
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin-bottom: 45px;
 }
 .ou {
     font-size: 14px;
@@ -123,7 +127,7 @@ hr {
     width: 120px;
     margin: 0 5px 3px 0;
     content: "";
-    border-top: 1px solid #666666;
+    border-top: 1px solid #666;
     border-bottom: 1px solid #000;
 }
 .ou:after {
@@ -131,7 +135,7 @@ hr {
     width: 120px;
     margin: 0 0 3px 5px;
     content: "";
-    border-top: 1px solid #666666;
+    border-top: 1px solid #666;
     border-bottom: 1px solid #000;
 }
 input[type="text"], [type="email"], [type="password"] {
@@ -185,5 +189,5 @@ input:focus, input:hover {
     font-size: 11px;
     margin: 0 125px;
     padding-bottom: 20px;
-    color: #cccccc;
+    color: #ccc;
 }
