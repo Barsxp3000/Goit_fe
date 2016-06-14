@@ -21,6 +21,7 @@ body {
     background: url("../img/fon.jpg") no-repeat;
     background-position: center top;
     background-color: #085699;
+    background-size: cover;
 }
 ul {
     list-style: none;
