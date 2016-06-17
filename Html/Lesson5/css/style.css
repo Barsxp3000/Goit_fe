@@ -81,24 +81,26 @@ header {
 
 /*Форма входа*/
 
-.form {
+.main_form {
     position: relative;
     margin: 100px auto;
-    width: 560px;
+    width: 550px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.63);
-    border: 1px solid black;
 }
-.form__h2{
+.form_header {
+    background: rgba(0, 0, 0, 0.63);
     color: #fff;
     padding: 15px;
-    border-bottom: 2px solid #fff ;
-    margin-bottom: 36px;
-  }
-  h2{
+    margin-bottom: 2px;
+}
+.form_header h2 {
     font-size: 24px;
     letter-spacing: 1px;
-  }
+}
+.form_footer {
+    padding-top: 35px;
+    background: rgba(0, 0, 0, 0.63);
+}
 input[type="image"] {
     width: 275px;
     height: 35px;
@@ -182,7 +184,7 @@ input:focus, input:hover {
     box-shadow: 1px 2px 24px 3px rgba(12, 58, 138, 1);
     background: rgba(12, 58, 138, 1);
 }
-.form p {
+.main_form p {
     font-size: 11px;
     margin: 0 125px;
     padding-bottom: 20px;
