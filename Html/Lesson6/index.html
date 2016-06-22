@@ -7,344 +7,141 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="shortcut icon" href="img/favicon.ico" type="gif">
+    <link rel="shortcut icon" href="img/favicon.ico" type="gif">
 </head>
 
 <body>
-
     <header>
-
         <div class="top clearfix">
-            <div class="phones">
-                <div class="shape">
-                    <i class="fa fa-phone"></i>
-                </div>
-                <p>(044)123-45-67 (044)567-89-10</p>
+            <div class="top__phone">
+                <div class="phone_ico"></div>
+                <a href="tel:#">(044)123-45-67</a>
+                <a href="tel:#">(044)567-89-10</a>
             </div>
-            <div class="log">
-                <div class="icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <form action="#">
-                    <input type="text" name="name" value="" placeholder="логин" required>
-                    <input type="password" name="pass" value="" placeholder="пароль" required>
-                    <button type="submit" name="name" value="" class="login">вход</button>
-                    <span></span>
-                    <a href="#" class="login">регистрация</a>
-                    <a href="#" class="forgotpass">забыли пароль?</a>
-                </form>
-
+            <div class="top__form">
+                <div class="form_ico"></div>
+                <form action="" name="zazor" id="zazor" method="POST">
+                    <input type="text" name="login" id="login" placeholder="логин" required maxlength="40">
+                    <input type="password" name="password" id="password" placeholder="пароль" required maxlength="20">
+                    <a type="enter" href="#">вход</a>
+                <span>|</span>
+                <a href="#">регистрация</a>
+                <a href="#">забыли пароль?</a>
+              </form>
             </div>
-            <div class="navi">
-                <div class="shape">
-                    <a href="#"><i class="fa fa-home"></i></a>
-                    <a href="#"><i class="fa fa-sitemap"></i></a>
-                    <a href="#"><i class="fa fa-envelope-o"></i></a>
-                </div>
+            <div class="top__links">
+                <ul>
+                    <li class="home">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="tree">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="mail">
+                        <a href="mailto:#@">1</a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="#">
+        </div>
+        <div class="menu">
+            <div class="menu_buttons">
+                <ul>
+                    <li><a href="#">о компани</a></li>
+                    <li><a href="#">оплата</a></li>
+                    <li><a href="#">доставка</a></li>
+                    <li><a href="#">статьи</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </div>
+            <div class="menu__basket">
+                <div class="basket_ico"></div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="selection">
+            <img src="img/middle.jpg" alt="#">
+        </div>
+        <div class="showcase">
+            <div class="showcase__left">
+                <ul>
+                    <li>Шины
+                        <ul>
+                            <li><a href="#">Наименование1</a></li>
+                            <li><a href="#">Наименование2</a></li>
+                            <li><a href="#">Наименование3</a></li>
+                            <li><a href="#">Наименование4</a></li>
+                        </ul>
+                    </li>
+                    <li> Диски
+                        <ul>
+                            <li><a href="#">Наименование1</a></li>
+                            <li><a href="#">Наименование2</a></li>
+                            <li><a href="#">Наименование3</a></li>
+                            <li><a href="#">Наименование4</a></li>
+                        </ul>
+                    </li>
+                    <li>Болты
+                        <ul>
+                            <li><a href="#">Наименование1</a></li>
+                            <li><a href="#">Наименование2</a></li>
+                            <li><a href="#">Наименование3</a></li>
+                            <li><a href="#">Наименование4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="showcase_right">
 
-        <figure>
-            <img src="img/image.jpg" alt="">
-        </figure>
+            </div>
+            <div class="showcase__center">
 
-        <nav class="clearfix">
+            </div>
+            <div class="showcase__bottom">
+                <ul>
+                    <li class="toyo">
+                        <a href="#"></a>
+                    </li>
+                    <li class="bridgestone">
+                        <a href="#"></a>
+                    </li>
+                    <li class="contonental">
+                        <a href="#"></a>
+                    </li>
+                    <li class="dooper">
+                        <a href="#"></a>
+                    </li>
+                    <li class="avon">
+                        <a href="#"></a>
+                    </li>
+                    <li class="factory">
+                        <a href="#"></a>
+                    </li>
+                    <li class="pirelli">
+                        <a href="#"></a>
+                    </li>
+                    <li class="dunlop">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__menu">
             <ul>
                 <li><a href="#">О компании</a></li>
-                <li><a href="#">Оплата</a></li>
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Статьи</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <div class="items">
-                <i class="fa fa-shopping-cart"></i>
-                <p>товаров: <strong>0</strong></p>
-                <p>на сумму: <strong>0,00 грн.</strong></p>
-            </div>
-        </nav>
-
-    </header>
-
-
-
-    <div class="main clearfix">
-
-        <aside class="left">
-            <header class="clearfix">
-                <div class="shape">
-                    <i class="fa fa-file-text-o"></i>
-                </div>
-                <h2>Каталог продукции:</h2>
-            </header>
-            <section class="clearfix">
-                <header>
-                    <div class="shape">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <h2>Шины:</h2>
-                </header>
-                <div class="items">
-                    <ul>
-                        <li><a href="#">Наименование 1</a></li>
-                        <li><a href="#">Наименование 2</a></li>
-                        <li><a href="#">Наименование 3</a></li>
-                        <li><a href="#">Наименование 4</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="clearfix">
-                <header>
-                    <div class="shape">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <h2>Диски:</h2>
-                </header>
-                <div class="items">
-                    <ul>
-                        <li><a href="#">Наименование 1</a></li>
-                        <li><a href="#">Наименование 2</a></li>
-                        <li><a href="#">Наименование 3</a></li>
-                        <li><a href="#">Наименование 4</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="clearfix">
-                <header>
-                    <div class="shape">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <h2>Болты:</h2>
-                </header>
-                <div class="items">
-                    <ul>
-                        <li><a href="#">Наименование 1</a></li>
-                        <li><a href="#">Наименование 2</a></li>
-                        <li><a href="#">Наименование 3</a></li>
-                        <li><a href="#">Наименование 4</a></li>
-                    </ul>
-                </div>
-            </section>
-        </aside>
-
-        <aside class="right">
-            <header class="clearfix">
-                <div class="shape">
-                    <i class="fa fa-file-text-o"></i>
-                </div>
-                <h2>Бренды:</h2>
-            </header>
-            <form class="" action="index.html" method="get">
-                <section class="clearfix">
-                    <header>
-                        <div class="shape">
-                            <i class="fa fa-circle"></i>
-                        </div>
-                        <h2>Шины:</h2>
-                    </header>
-                    <div class="items">
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 1</span>
-                        </label>
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 2</span>
-                        </label>
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 3</span>
-                        </label>
-                    </div>
-                </section>
-                <section class="clearfix">
-                    <header>
-                        <div class="shape">
-                            <i class="fa fa-circle"></i>
-                        </div>
-                        <h2>Диски:</h2>
-                    </header>
-                    <div class="items">
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 1</span>
-                        </label>
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 2</span>
-                        </label>
-                        <label class="clearfix">
-                            <input type="checkbox" name="name" value="">
-                            <span>Бренд 3</span>
-                        </label>
-                    </div>
-                </section>
-                <button type="submit" name="brand" value="">Выбрать</button>
-            </form>
-        </aside>
-
-        <main>
-            <div class="elem-row">
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Goodyear</h1>
-                            <h2>Ultra Grip Extreme</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/goodyear.jpg" alt=""></div>
-                        <p>90.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Nokian</h1>
-                            <h2>Hakkapeliitta R</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/nokian.jpg" alt=""></div>
-                        <p>115.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Hankook</h1>
-                            <h2>K 708 155/65 R14</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/hankook.jpg" alt=""></div>
-                        <p>393.00 грн.</p>
-                    </a>
-                </figure>
-            </div>
-            <div class="elem-row">
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Goodyear</h1>
-                            <h2>Ultra Grip Extreme</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/goodyear.jpg" alt=""></div>
-                        <p>90.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Nokian</h1>
-                            <h2>Hakkapeliitta R</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/nokian.jpg" alt=""></div>
-                        <p>115.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Hankook</h1>
-                            <h2>K 708 155/65 R14</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/hankook.jpg" alt=""></div>
-                        <p>393.00 грн.</p>
-                    </a>
-                </figure>
-            </div>
-            <div class="elem-row clearfix">
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Goodyear</h1>
-                            <h2>Ultra Grip Extreme</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/goodyear.jpg" alt=""></div>
-                        <p>90.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Nokian</h1>
-                            <h2>Hakkapeliitta R</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/nokian.jpg" alt=""></div>
-                        <p>115.00 грн.</p>
-                    </a>
-                </figure>
-                <figure class="elem">
-                    <a href="#">
-                        <div>
-                            <h1>Hankook</h1>
-                            <h2>K 708 155/65 R14</h2>
-                        </div>
-                        <div class="img_wrapper"><img src="img/hankook.jpg" alt=""></div>
-                        <p>393.00 грн.</p>
-                    </a>
-                </figure>
-            </div>
-        </main>
-
-    </div>
-
-    <div class="brands clearfix">
-        <div class="brands-wrapper">
-            <figure>
-                <a href="">
-                    <img src="img/Links/toyotires.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/bridgstone.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/continental.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/tire.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/avon.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/tirefactory.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/pirelli.png" alt="">
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <img src="img/Links/dunlop.png" alt="">
-                </a>
-            </figure>
         </div>
-
-    </div>
-
-    <footer>
-
-        <div class="foot-menu">
-            <ul>
-                <li><a href="">О компании</a></li>
-                <li><span></span></li>
-                <li><a href="">Доставка</a></li>
-                <li><span></span></li>
-                <li><a href="">Статьи</a></li>
-                <li><span></span></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </div>
-        <p>Создание сайта &copy; Global Vision</p>
+        <p>Создание сайта С Logunov edition</p>
     </footer>
-
 </body>
 
 </html>
