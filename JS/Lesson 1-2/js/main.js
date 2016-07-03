@@ -21,7 +21,8 @@ function powHwork() {
     var n = prompt('Введите степень', '');
 
     console.log(powInt(a, n));
-    alert(powInt(a, n));
+    var message = powInt(a, n);
+    alert(message);
 }
 
 //заполнение массива
@@ -43,8 +44,9 @@ function arr() {
                 return true;
             }
         }
+        return false;
     }
-    if (findUser() == true) {
+    if (findUser()) {
         alert(userName + ', hello bratanushka!!!');
     } else {
         alert(userName + ', you a not from this pesochnica');
