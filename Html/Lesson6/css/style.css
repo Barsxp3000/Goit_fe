@@ -1,35 +1,631 @@
-body {
-    width: 910px;
-    margin: auto;
-    font-family: "Lucida Sans Unicode", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
-.clearfix:after {
-    content: '';
+.wrapper {
+    width: 1000px;
+    height: 1310px;
+    margin: 0 auto;
+    font-family: Tahoma, sans-serif;
+}
+header {
+    width: 948px;
+    height: 60px;
+}
+header .navigation {
+    display: inline;
+    float: right;
+    border: 1px solid #ccd2d4;
+    margin-top: 19px;
+    margin-left: 19px;
+    border-radius: 90px;
+    padding-right: 2px;
+    padding-left: 7px;
+    box-shadow: 2px 2px 4px 1px rgba(194, 183, 194, 1);
+}
+.navigation img {
+    padding-top: 3px;
+    padding-left: 0;
+    padding-bottom: 4px;
+    padding-right: 5px;
+}
+header .login {
+    display: inline;
+    float: right;
+    background: linear-gradient(to bottom, #1f6787, #0c3357);
+    height: 29px;
+    width: 495px;
+    margin-top: 18px;
+    border-radius: 5px;
+}
+header .login img {
+    float: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+header .login form {
+    float: left;
+}
+header .login input {
+    width: 108px;
+    margin-right: 6px;
+    margin-left: -2px;
+    margin-top: 4px;
+    height: 14px;
+    font-size: 11px;
+}
+header .login a {
+    margin-left: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    float: left;
+}
+header .login .enter {
+    border-right: 1px solid #fff;
+    padding-right: 7px;
+    margin-top: 6px;
+}
+header .login .reg {
+    margin-left: 6px;
+    margin-top: 6px;
+}
+header .login .forgpass {
+    color: #bfbfbf;
+    text-decoration: underline;
+    margin-left: 23px;
+    font-size: 12.5px;
+    margin-top: 5px;
+}
+header .contacts {
+    margin-top: 22px;
+    float: right;
+    margin-right: 14px;
+}
+header .contacts p {
+    float: right;
+    margin: 0;
+    color: #5e696d;
+    font-size: 19px;
+    margin-left: 3px;
+}
+header .contacts div {
+    float: right;
+    background: linear-gradient(to top, #1f6787, #0c3357);
+    border-radius: 90px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 1px;
+}
+.background {
+    height: 237px;
+    width: 1000px;
     clear: both;
-    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
-.top *{
-float: left;
-display: inline-block;
+.background img {
+    height: 236px;
+    width: 906px;
+    margin-top: -5px;
+    margin-left: 5px;
 }
-.top__phone{
-  padding-left: 10px;
+nav {
+    width: 911px;
+    height: 35px;
+    margin: 0 auto;
+    margin-left: 48px;
+    background: linear-gradient(to bottom, #505860 1%, #010101 95%);
+    border-radius: 3px;
+    box-shadow: 0 4px 4px 0 rgba(61, 61, 61, 1);
 }
-.top__form{
-  background: blue;
-  padding-left: 10px;
-  font-size: 10px;
+nav .bag {
+    display: inline;
+    float: right;
 }
-.top__form a{
-  color: #fff;
-  }
-
-.top__links {
+nav .bag p {
+    float: right;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #6b7275;
+    margin-right: 9px;
 }
-.menu *{
-  float: left;
-  display: inline-block;
-  }
-
-  .menu_buttons{
-  }
+nav .bag .hrn {
+    color: #12456b;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-right: 13px;
+}
+nav .bag .numgoods {
+    color: #12456b;
+    margin-left: -9px;
+    margin-top: 9px;
+    margin-right: 12px;
+}
+nav .bag img {
+    margin-top: 9px;
+    margin-right: 4px;
+    float: right;
+}
+nav .navbar {
+    float: right;
+}
+nav .navbar ul {
+    list-style-type: none;
+    margin-right: 57px;
+    font-size: 15px;
+    margin-top: 9px;
+}
+nav .navbar li {
+    display: inline;
+}
+nav .navbar a {
+    text-decoration: none;
+    color: #b1bcc0;
+    padding: 0 9px;
+    border-radius: 45px;
+}
+.delivery {
+    margin-right: 7px;
+}
+.payment {
+    margin-right: 7px;
+}
+.about {
+    margin-right: 12px;
+}
+.arts {
+    margin-right: 2px;
+}
+nav .navbar a:hover {
+    background: linear-gradient(to bottom, #1f6787, #0c3357);
+    color: #fff;
+}
+.searchbar {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.findauto {
+    float: left;
+    margin-left: -8px;
+    margin-right: 8px;
+}
+.findtires {
+    float: left;
+}
+.finddisc {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.leftbar {
+    float: left;
+    width: 237px;
+    height: 626px;
+    margin-top: 7px;
+    margin-left: 48px;
+}
+.rightbar {
+    float: right;
+    width: 237px;
+    height: 626px;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: -13px;
+}
+.catalaogue {
+    font-size: 14px;
+    height: 24px;
+    width: 180px;
+    border: 1px solid #8b979c;
+    border-radius: 30px;
+}
+.catalaogue p {
+    float: right;
+    margin-right: 6px;
+    margin-top: 3px;
+    color: #114165;
+}
+.icon {
+    float: left;
+    background: linear-gradient(to top, #1f6787, #0c3357);
+    border-radius: 90px;
+    height: 18px;
+    width: 20px;
+    text-align: center;
+    padding: 1px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.icon img {
+    margin-top: 3px;
+}
+.tires {
+    height: 24px;
+    width: 150px;
+    margin-top: 15px;
+    border: 1px solid #79878d;
+    border-radius: 90px;
+    font-size: 14px;
+}
+.tires p {
+    float: right;
+    margin-right: 78px;
+    margin-top: 4px;
+    color: #114165;
+}
+.disks {
+    height: 24px;
+    width: 150px;
+    margin-top: -6px;
+    border: 1px solid #79878d;
+    border-radius: 90px;
+    font-size: 14px;
+}
+.disks p {
+    float: right;
+    margin-right: 74px;
+    margin-top: 3px;
+    color: #114165;
+}
+.bolt {
+    height: 24px;
+    width: 150px;
+    margin-top: -7px;
+    border: 1px solid #79878d;
+    border-radius: 90px;
+    font-size: 14px;
+}
+.bolt p {
+    float: right;
+    margin-right: 74px;
+    margin-top: 3px;
+    color: #114165;
+}
+.round {
+    height: 11px;
+    width: 11px;
+    border: 5px solid #114165;
+    border-radius: 90px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 1px;
+}
+.leftbar ul {
+    list-style-type: circle;
+    margin-left: 60px;
+    margin-top: 4px;
+}
+.leftbar ul li {
+    color: #79878d;
+    font-size: 13px;
+    margin-left: -8px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.leftbar ul a {
+    text-decoration: none;
+    color: #79878d;
+    list-style: none;
+}
+.leftbar li a:hover {
+    text-decoration: underline;
+    color: #0c3256;
+    font-style: italic;
+    font-weight: 700;
+}
+.brands {
+    font-size: 14px;
+    height: 25px;
+    width: 178px;
+    border: 1px solid #8b979c;
+    border-radius: 30px;
+}
+.brands p {
+    float: right;
+    margin-right: 95px;
+    margin-top: 3px;
+    color: #114165;
+}
+.iconb {
+    float: left;
+    background: linear-gradient(to top, #1f6787, #0c3357);
+    border-radius: 90px;
+    height: 18px;
+    width: 20px;
+    text-align: center;
+    padding: 1px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.iconb img {
+    margin-top: 3px;
+}
+.rightbar .tires {
+    height: 26px;
+    width: 136px;
+    margin-top: 15px;
+    border: 1px solid #79878d;
+    border-radius: 90px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+.rightbar .tires p {
+    float: right;
+    margin-right: 63px;
+    margin-top: 3px;
+    color: #114165;
+}
+.rightbar .disks {
+    height: 25px;
+    width: 137px;
+    margin-top: 11px;
+    margin-left: 11px;
+    border: 1px solid #79878d;
+    border-radius: 90px;
+    font-size: 14px;
+}
+.rightbar .disks p {
+    float: right;
+    margin-right: 60px;
+    margin-top: 3px;
+    color: #114165;
+}
+.rightbar .point {
+    margin-left: 14px;
+}
+.rightbar input[type="checkbox"] {
+    margin-right: 13px;
+    margin-top: 9px;
+    height: 10px;
+    margin-bottom: 6px;
+}
+.rightbar input[type="button"] {
+    height: 27px;
+    width: 86px;
+    border-radius: 90px;
+    background: linear-gradient(to top, #1f6787, #0c3357);
+    color: #fff;
+    margin-top: 14px;
+    margin-right: 132px;
+}
+.rightbar label {
+    margin-right: 142px;
+    color: #234a68;
+    font-size: 13px;
+}
+.secondcheck input[type="checkbox"] {
+    margin-right: 12px;
+    margin-top: 10px;
+    height: 10px;
+    margin-bottom: 6px;
+}
+.secondcheck label {
+    margin-right: 142px;
+    color: #234a68;
+    font-size: 13px;
+}
+main {
+    height: 627px;
+    width: 528px;
+    background: linear-gradient(to bottom, #e5e7e8, #93a7b0);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+main a {
+    text-decoration: none;
+}
+.wheel1 {
+    float: left;
+    margin-left: -22px;
+    margin-top: 5px;
+    margin-right: 41px;
+}
+.wheel1 div {
+    height: 127px;
+    width: 137px;
+    background-color: #fff;
+    border-radius: 9px;
+    margin-top: 2px;
+    border: 1px solid #b0b9bc;
+}
+.wheel1 img {
+    margin-left: 29px;
+    margin-top: 5px;
+}
+.wheel1 p {
+    text-align: center;
+}
+.wheel1brand {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.wheel1name {
+    font-size: 14px;
+    margin-top: -5px;
+    margin-left: 0;
+}
+.wheel1price {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 11px;
+    margin-top: 1px;
+}
+.wheel2 {
+    float: left;
+    margin-left: -10px;
+    margin-top: 5px;
+    margin-right: 41px;
+}
+.wheel2 div {
+    height: 125px;
+    width: 136px;
+    background-color: #fff;
+    border-radius: 9px;
+    margin-top: 0;
+    margin-left: -3px;
+    border: 1px solid #b0b9bc;
+}
+.wheel2 img {
+    margin-left: 33px;
+    margin-top: 5px;
+}
+.wheel2 p {
+    text-align: center;
+}
+.wheel2brand {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.wheel2name {
+    font-size: 14px;
+    margin-top: -3px;
+    margin-left: -2px;
+}
+.wheel2price {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.wheel3 {
+    float: left;
+    margin-left: -10px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+.wheel3 div {
+    height: 127px;
+    width: 137px;
+    background-color: #fff;
+    border-radius: 9px;
+    margin-top: 0;
+    border: 1px solid #b0b9bc;
+}
+.wheel3 img {
+    margin-left: 27px;
+    margin-top: 3px;
+}
+.wheel3 p {
+    text-align: center;
+}
+.wheel3brand {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.wheel3name {
+    font-size: 14px;
+    margin-top: -4px;
+    margin-left: 0;
+}
+.wheel3price {
+    font-size: 15px;
+    color: #206988;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+.row1 {
+    margin-top: 0;
+}
+.row2 {
+    margin-top: -427px;
+}
+.row3 {
+    margin-top: -222px;
+}
+.logos {
+    margin-top: 39px;
+    text-align: center;
+    margin-left: 170px;
+}
+.logos div {
+    float: left;
+}
+.toyo {
+    margin-left: -5px;
+    margin-top: 2px;
+    margin-right: 15px
+}
+.bridgestone {
+    margin-right: 15px;
+    margin-left: -3px;
+}
+.continental {
+    margin-left: -2px;
+    margin-top: 2px;
+    margin-right: 13px;
+}
+.cooper {
+    margin-left: 2px;
+    margin-right: 9px;
+    margin-top: 1px;
+}
+.avon {
+    margin-left: 2px;
+    margin-right: 9px;
+}
+.tyrefac {
+    margin-left: 5px;
+    margin-right: 9px;
+    margin-top: -2px;
+}
+.pirelli {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.dunlop {
+    margin-left: 10px;
+}
+footer {
+    width: 906px;
+    height: 100px;
+    margin: 22px auto;
+    margin-left: 50px;
+    background-color: #213a4d;
+    margin-bottom: -10px;
+    text-align: center;
+    padding-top: 6px;
+}
+.ref {
+    margin-left: 295px;
+}
+.ref li {
+    margin-top: 0;
+    float: left;
+    list-style: none;
+}
+.copy {
+    margin-top: 13px;
+    letter-spacing: .5px;
+    margin-left: -3px;
+}
+footer a {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #bec6c9;
+    text-decoration: none;
+    padding: 0 12px;
+    border-right: 1px solid #bec6c9;
+}
+footer a:hover {
+    color: #52abcb;
+}
+footer p {
+    font-size: 10px;
+    color: #7f4740;
+}
