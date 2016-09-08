@@ -203,7 +203,7 @@ nav .navbar a:hover {
 }
 .leftbar {
     float: left;
-    width: 237px;
+    /*width: 237px;*/
     height: 626px;
     margin-top: 7px;
     margin-left: 48px;
@@ -296,7 +296,7 @@ nav .navbar a:hover {
 }
 .leftbar ul {
     list-style-type: circle;
-    margin-left: 60px;
+    margin-left: 56px;
     margin-top: 4px;
 }
 .leftbar ul li {
@@ -378,7 +378,7 @@ nav .navbar a:hover {
     margin-left: 14px;
 }
 .rightbar input[type="checkbox"] {
-    margin-right: 13px;
+    margin-right: 8px;
     margin-top: 9px;
     height: 10px;
     margin-bottom: 6px;
@@ -409,7 +409,7 @@ nav .navbar a:hover {
     font-size: 13px;
 }
 main {
-    height: 627px;
+    /*height: 627px;*/
     width: 528px;
     background: linear-gradient(to bottom, #e5e7e8, #93a7b0);
     margin: 5px auto;
@@ -418,135 +418,28 @@ main {
 main a {
     text-decoration: none;
 }
-.wheel1 {
-    float: left;
-    margin-left: -22px;
-    margin-top: 5px;
-    margin-right: 41px;
-}
-.wheel1 div {
-    height: 127px;
-    width: 137px;
-    background-color: #fff;
-    border-radius: 9px;
-    margin-top: 2px;
-    border: 1px solid #b0b9bc;
-}
-.wheel1 img {
-    margin-left: 29px;
-    margin-top: 5px;
-}
-.wheel1 p {
+.whell {
+    display: inline-block;
+    list-style: none;
     text-align: center;
+    margin: 7px 2px 8px 11px;
+    padding-left: 12px;
 }
-.wheel1brand {
-    font-size: 15px;
+.showcase ul {
+    padding-bottom: 22px;
+}
+.whell a:first-child {
     color: #206988;
-    font-weight: 700;
-    margin-top: 6px;
+    text-decoration: none;
 }
-.wheel1name {
+.whell p {
     font-size: 14px;
-    margin-top: -5px;
-    margin-left: 0;
 }
-.wheel1price {
-    font-size: 15px;
-    color: #206988;
-    font-weight: 700;
-    font-style: italic;
-    margin-left: 11px;
-    margin-top: 1px;
-}
-.wheel2 {
-    float: left;
-    margin-left: -10px;
-    margin-top: 5px;
-    margin-right: 41px;
-}
-.wheel2 div {
-    height: 125px;
-    width: 136px;
-    background-color: #fff;
-    border-radius: 9px;
-    margin-top: 0;
-    margin-left: -3px;
-    border: 1px solid #b0b9bc;
-}
-.wheel2 img {
-    margin-left: 33px;
-    margin-top: 5px;
-}
-.wheel2 p {
-    text-align: center;
-}
-.wheel2brand {
-    font-size: 15px;
-    color: #206988;
-    font-weight: 700;
-    margin-top: 6px;
-}
-.wheel2name {
+.whell p:last-child {
     font-size: 14px;
-    margin-top: -3px;
-    margin-left: -2px;
-}
-.wheel2price {
-    font-size: 15px;
-    color: #206988;
-    font-weight: 700;
     font-style: italic;
-    margin-left: 10px;
-    margin-top: 4px;
-}
-.wheel3 {
-    float: left;
-    margin-left: -10px;
-    margin-top: 5px;
-    margin-right: 0;
-}
-.wheel3 div {
-    height: 127px;
-    width: 137px;
-    background-color: #fff;
-    border-radius: 9px;
-    margin-top: 0;
-    border: 1px solid #b0b9bc;
-}
-.wheel3 img {
-    margin-left: 27px;
-    margin-top: 3px;
-}
-.wheel3 p {
-    text-align: center;
-}
-.wheel3brand {
-    font-size: 15px;
-    color: #206988;
-    font-weight: 700;
-    margin-top: 6px;
-}
-.wheel3name {
-    font-size: 14px;
-    margin-top: -4px;
-    margin-left: 0;
-}
-.wheel3price {
-    font-size: 15px;
-    color: #206988;
-    font-weight: 700;
-    font-style: italic;
-    margin-left: 12px;
-    margin-top: 2px;
-}
-.row1 {
-    margin-top: 0;
-}
-.row2 {
-    margin-top: -427px;
-}
-.row3 {
-    margin-top: -222px;
+    font-weight: bold;
+    color: #114165;
 }
 .logos {
     margin-top: 39px;
