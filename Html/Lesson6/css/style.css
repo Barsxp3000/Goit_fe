@@ -219,13 +219,13 @@ nav .navbar a:hover {
 .catalaogue {
     font-size: 14px;
     height: 24px;
-    width: 180px;
+    /*width: 180px;*/
     border: 1px solid #8b979c;
     border-radius: 30px;
 }
 .catalaogue p {
     float: right;
-    margin-right: 6px;
+    /*margin-right: 6px;*/
     margin-top: 3px;
     color: #114165;
 }
