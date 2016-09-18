@@ -1,21 +1,20 @@
 window.onload = function() {
     var leftForm = document.getElementById('left_form');
     var rightForm = document.getElementById('right_form');
-    var center = document.querySelector('ul');
+    var center = document.getElementById('sms_box');
+
 
     function sendL() {
-        var chatL
-        var newLi
-        chatL = (document.getElementById("left_form").value);
-        newLi = document.createElement('li');
+        var chatL = (document.getElementById("left_form").value);
+        var newLi = document.createElement('li');
         if (chatL != '') {
-            newLi.innerHTML = ('<string id="left_form"> You says: </string>' + (chatL));
-            sms_box.appendChild(newLi);
-        } else {
-            toolTipShow();
+            newLi.innerHTML = ('<string id="left_form"> Левое полушарие: </string>' + (chatL));
+            center.parentNode.insertBefore(newLi, center.parentNode.firstChild);
         }
         if (chatL != '') {
             (document.getElementById("left_form").value) = "";
+        } else {
+            toolTipShow();
         }
     }
 
@@ -23,13 +22,13 @@ window.onload = function() {
         var chatR = (document.getElementById("right_form").value);
         var newLi = document.createElement('li');
         if (chatR != '') {
-            newLi.innerHTML = ('<string id="right"> You says: </string>' + (chatR));
-            sms_box.appendChild(newLi);
-        } else {
-            toolTipShow();
+            newLi.innerHTML = ('<string id="right"> Правое полушарие: </string>' + (chatR));
+            center.parentNode.insertBefore(newLi, center.parentNode.firstChild);
         }
         if (chatR != '') {
             (document.getElementById("right_form").value) = "";
+        } else {
+            toolTipShow();
         }
     }
 
