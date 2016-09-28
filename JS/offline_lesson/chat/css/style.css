@@ -15,28 +15,10 @@ header {
     box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.83);
 }
 
-input {
-    padding: 5px;
-    font-size: 15px;
-    text-shadow: 0px 1px 0px #fff;
-    outline: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
-    background: -moz-linear-gradient(top, #bcbcbe, #ffffff);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #717171;
-    -webkit-box-shadow: 1px 1px 0px #efefef;
-    -moz-box-shadow: 1px 1px 0px #efefef;
-    box-shadow: 1px 1px 0px #efefef;
+.tasks{
+  margin-top: 50px;
+margin-left: 50px;
 }
-
-input:focus {
-    -webkit-box-shadow: 0px 0px 5px #007eff;
-    -moz-box-shadow: 0px 0px 5px #007eff;
-    box-shadow: 0px 0px 5px #007eff;
-}
-
 .left {
     text-align: center;
     float: left;
@@ -62,12 +44,30 @@ h2 {
     padding-bottom: 10px;
 }
 
+.tasks {
+          overflow: hidden;
+      }
+      .task {
+          overflow: hidden;
+      }
+      .task-status {
+          float: left;
+      }
+      .task-name-done {
+          text-decoration: line-through;
+      }
 .form {
     text-align: center;
 }
 
 .button {
     margin: 10px;
+}
+
+#clearDone{
+display:inline-block;
+position: absolute;
+left: 43%;
 }
 
 #left_form {
@@ -84,6 +84,7 @@ h2 {
 }
 
 .tool_tips {
+  z-index: 1;
     display: none;
     position: absolute;
     left: 37%;

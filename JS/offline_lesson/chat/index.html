@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>chat</title>
 	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/todo.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,17 +17,27 @@
 			</div>
 			<h2>Диалог с умным человеком</h2>
 		</header>
+		<button id="clearDone">Удалить нахрен все выделенное</button>
 		<div class="main">
 			<div class="left">
-				<input id="left_form" class="form" placeholder="Риторический вопрос" type="text" name="name" value="">
-				<input id="send_left" class="button" type="button" value="Send Message">
+        <div class="buttons">
+            <form id="addTaskFormLeft">
+                <input type="text" name="text_left">
+                <button>Send Left Message</button>
+            </form>
+        </div>
 			</div>
 			<div class="center">
+					<div class="tasks"></div>
 				<ul id="sms_box"></ul>
 			</div>
 			<div class="right">
-				<input id="right_form" class="form" placeholder="Риторический ответ" type="text" name="name" value="">
-				<input id="send_right" class="button" type="button" value="Send Message">
+        <div class="buttons">
+            <form id="addTaskFormRight">
+                <input type="text" name="text_right">
+                <button>Send Right Message</button>
+            </form>
+        </div>
 			</div>
 		</div>
 	</div>
