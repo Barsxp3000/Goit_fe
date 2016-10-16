@@ -26,20 +26,24 @@ function reset() {
 function increment() {
     if (running == 1) {
         setTimeout(function() {
-            time++;
-            var mins = Math.floor(time / 10 / 60);
-            var secs = Math.floor(time / 10 % 60);
-            var hours = Math.floor(time / 10 / 60 / 60);
-            var tenths = time % 10;
+            time += 4;
+            var mins = Math.floor(time / 1000 / 60);
+            var secs = Math.floor(time / 1000 % 60);
+            var hours = Math.floor(time / 1000 / 60 / 60);
+            var mili = time % 1000;
+
             if (mins < 10) {
                 mins = "0" + mins;
             }
             if (secs < 10) {
                 secs = "0" + secs;
             }
+            if (mili < 100) {
+                mili = '0' + mili
+            };
             document.getElementById('time').innerHTML = hours + ":" + mins + ":" + secs;
-            document.getElementById('sec').innerHTML = tenths + "0";
+            document.getElementById('sec').innerHTML = mili + "";
             increment();
-        }, 50)
+        }, 1)
     }
 }
