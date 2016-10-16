@@ -1,0 +1,69 @@
+body {
+  text-align: center;
+}
+.link {
+  width: 1100px;
+  height: 50px;
+  margin: 0px auto;
+  background-color: #1103AB;
+}
+.link a {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+.link a:hover {
+  color: #52F7D9;
+  text-decoration: none;
+}
+.container {
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+}
+#sec {
+  font-size: 30px;
+}
+button:hover {
+  cursor: pointer;
+}
+button {
+  font-size: 30px;
+  width: 140px;
+  height: 60px;
+  border-radius: 5px;
+}
+#output {
+  width: 800px;
+  height: 130px;
+  padding-bottom: 45px;
+  border: 15px solid black;
+  border-radius: 30px;
+  background-color: #D1DCE0;
+}
+#output p {
+  font-size: 100px;
+  margin-top: -30px;
+  color: black;
+  font-weight: bold;
+}
+#startPause, #reset {
+  margin-top: 15px;
+  border: 7px solid black;
+  border-radius: 20px;
+}
+#startPause {
+  display: inline-block;
+  float: left;
+  margin-left: 200px;
+}
+#reset {
+  display: inline-block;
+  float: right;
+  margin-right: 200px;
+}
+#start, #clear {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}

@@ -1,0 +1,21 @@
+form{
+  width:35%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  white-space: no-wrap;
+  border-bottom: 1px dotted #777;
+  width:200px;
+}
+
+label {
+  display: inline-block;
+  width: 75px;
+}
+
+div {
+  margin-bottom: 12px;
+}

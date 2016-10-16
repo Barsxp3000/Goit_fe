@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home work 11-12</title>
+  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/loDash.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+  <section class="carousel">
+    <h1>New Collection Escada Resort 2017</h1>
+    <div class="carousel-arrow-left"><span>Влево</span></div>
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="img/1.jpg" alt="image">
+          <p>Escada 1</p>
+        </li>
+        <li class="carousel-element"><img src="img/2.jpg" alt="image">
+          <p>Escada 2</p>
+        </li>
+        <li class="carousel-element"><img src="img/3.jpg" alt="image">
+          <p>Escada 3</p>
+        </li>
+        <li class="carousel-element"><img src="img/4.jpg" alt="image">
+          <p>Escada 4</p>
+        </li>
+        <li class="carousel-element"><img src="img/5.jpg" alt="image">
+          <p>Escada 5</p>
+        </li>
+        <li class="carousel-element"><img src="img/6.jpg" alt="image">
+          <p>Escada 6</p>
+        </li>
+        <li class="carousel-element"><img src="img/7.jpg" alt="image">
+          <p>Escada 7</p>
+        </li>
+        <li class="carousel-element"><img src="img/8.jpg" alt="image">
+          <p>Escada 8</p>
+        </li>
+        <li class="carousel-element"><img src="img/9.jpg" alt="image">
+          <p>Escada 9</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="carousel-arrow-right"><span>Вправо</span></div>
+
+  </section>
+
+
+  <section class="template">
+    <script type="text/template" id="profile">
+      <div class="info">
+        <h3><%= name  %></h3>
+        <img src="<%= photo.src %>" alt="<%= photo.alt%>">
+        <hr>
+        <p>
+          <%= job %>
+        </p>
+        <hr>
+        <p>
+          <%= why %>
+        </p>
+        <ul>
+          <% for (var i=0;i<reasons.length;i++){%>
+            <li>
+              <%= reasons[i] %>
+            </li>
+            <% }; %>
+        </ul>
+        <hr>
+        <p>
+          <%= phone %>
+        </p>
+        <p>
+          <%= number %>
+        </p>
+
+        <br>
+        <h3>
+          <%= vk %>
+        </h3>
+        <p><%= vk_link  %></p>
+
+      </div>
+    </script>
+
+  </section>
+
+</body>
+
+</html>

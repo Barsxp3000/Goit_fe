@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HomeWork 7-8_Form</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <form action="index_form.html" method="POST" name="send-form" id="send-form">
+    <fieldset>
+      <div>
+        <label for="firstname">Firstname:</label>
+        <input name="firstname" type="text" placeholder="Please enter your first name" required autofocus title="Please provide your firstname">
+      </div>
+       <div>
+       <label for="lastname">Lastname:</label>
+       <input name="lastname" type="text" placeholder="Please enter your last name" required title="Please provide also your lastname">
+      </div>
+      <div>
+       <label for="adress">Address</label>
+       <input name="adress" type="adress" placeholder="Please enter your adress" required title="Your home or work address">
+      </div>
+    </fieldset>
+    <button>Show help</button>
+  </form>
+
+  <script src="js/script_form.js"></script>
+</body>
+
+</html>

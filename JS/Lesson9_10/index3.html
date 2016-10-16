@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basic carousel for HW 9-10</title>
+
+  <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+  <link rel="stylesheet" type="text/css" href="css/midnight.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/heapbox.js"></script>
+
+  <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>What would be your next fruit?</h1>
+
+
+    <div class="jcarousel-wrapper">
+      <div class="jcarousel">
+        <ul>
+          <li><img src="img/fruit1.jpg" alt=""></li>
+          <li><img src="img/fruit2.jpg" alt=""></li>
+          <li><img src="img/fruit3.jpg" alt=""></li>
+          <li><img src="img/fruit4.jpg" alt=""></li>
+          <li><img src="img/fruit5.jpg" alt=""></li>
+          <li><img src="img/fruit6.jpg" alt=""></li>
+        </ul>
+      </div>
+
+
+      <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+      <p class="jcarousel-pagination">
+      </p>
+      <hr>
+
+      <select id="mySelect" class="clearfix">
+        <option value="Apple">Apple</option>
+        <option value="Cherry">Cherry</option>
+        <option value="Raspberry">Raspberry</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="Peach">Peach</option>
+        <option value="Pine">Pine</option>
+      </select>
+      <br>
+      <div class="checkbox_item clearfix">
+
+        <p class="vamp">Checkbox with jQuery</p>
+
+        <div>
+          <label for="ch1">Item 1</label>
+          <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+        </div>
+        <div>
+          <label for="ch2">Item 2</label>
+          <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+        </div>
+        <div>
+          <label for="ch3">Item 3</label>
+          <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+        </div>
+
+
+        <p class="vamp">Checkbox with CSS</p>
+        <input type="checkbox" id="label4">
+        <label for="label4">Item 1</label>
+        <input type="checkbox" id="label5">
+        <label for="label5">Item 2</label>
+        <input type="checkbox" id="label6">
+        <label for="label6">Item 3</label>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dropdown_menu_item clearfix">
+    <h2>Dropdown Menu with JQuery</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown"><a href="#">Nav 3</a>
+          <ul class="sub-menu">
+            <li><a href="#">Nav 3.1</a></li>
+            <li><a href="#">Nav 3.2</a></li>
+            <li><a href="#">Nav 3.3</a></li>
+            <li class="dropdown"><a href="#">Nav 3.4</a>
+              <ul class="sub-menu">
+                <li><a href="#">Nav 3.4.1</a></li>
+                <li class="dropdown">
+                  <a href="#">Nav 3.4.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Nav 3.4.2.1</a></li>
+                    <li><a href="#">Nav 3.4.2.2</a></li>
+                    <li><a href="#">Nav 3.4.2.3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <h2>Dropdown Menu with JavaScript</h2>
+
+    <div id="nav">
+      <div class="menu-item">
+        Menu 1
+        <div class="submenu">
+          Submenu
+        </div>
+      </div>
+      <div class="menu-item">
+        Menu 2
+        <div class="submenu">
+          Submenu
+        </div>
+      </div>
+      <div class="menu-item">
+        Menu 3
+        <div class="submenu">
+          Submenu
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <script type="text/javascript" src="js/script.js"></script>
+
+  <script type="text/javascript">
+    $("#mySelect").heapbox();
+  </script>
+  
+
+
+</body>
+
+</html>
