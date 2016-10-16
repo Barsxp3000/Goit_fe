@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-  <meta charset="UTF-8">
-  <title>Home Work 5-6</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/reset.css">
+        <meta charset="UTF-8">
+        <title>Home Work 5-6</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <script src="js/script.js" type="text/javascript"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
 
-</head>
+    <body>
+        <div class="container">
 
-<body>
-  <div class="link"><a href="http://www.online-stopwatch.com/">www.online-stopwatch.com</a></div>
+            <div id="output">
+                <p id="time">0:00:00</p>
+                <p id="sec">00</p>
+            </div>
 
-  <div class="container">
+            <div id="controls" align="center">
 
-    <button id="output"><p>00:00:00 <span id="sec">0</span></p>
-      </button>
+                <button id="startPause" onclick="startPause()">
+                    <p id="start">Start</p>
+                </button>
 
-    <div id="controls" align="center">
+                <button id="reset" onclick="reset()">
+                    <p id="clear">Clear</p>
+                </button>
+            </div>
+        </div>
 
-      <button id="startPause" class="btn btn-success" onclick="startPause()"><b id="start">Start</b></button>
-
-      <button onclick="reset()" id="reset" class="btn btn-danger"><b id="clear">Clear</b></button>
-    </div>
-  </div>
-
-  <script src="js/script.js" type="text/javascript"></script>
-</body>
+    </body>
 
 </html>
