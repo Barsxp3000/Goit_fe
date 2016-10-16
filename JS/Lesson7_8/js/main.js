@@ -17,20 +17,18 @@ $(document).ready(function () {
   $input.hover (
     function() {
     $(this).siblings('.tooltip').animate(
-      {height:'+25px', opacity:0.7},800, function () {
-      console.log('animation complete')
+      {height:'+25px', opacity:0.7},100, function () {
     });
   },
     function() {
     $(this).siblings('.tooltip').animate(
-      {opacity:0},300);
+      {opacity:0},100);
   });
 
   var $help = $('button');
   $help.on('click', function(e) {
       $('.tooltip').animate(
-        {height:'+25px', opacity:0.7},1000,function () {
-        console.log('animation complete')
+        {height:'+25px', opacity:0.7},400,function () {
       });
 
   });
