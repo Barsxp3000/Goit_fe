@@ -1,35 +1,33 @@
-$(function(){
+$(function() {
 
-var $tab = $('.tablist');
+    var $tab = $('.tablist');
 
-$tab.on('click', 'li:not(tab-current)', function() {
-  $(this).addClass('tab-current');
-  $(this).siblings().removeClass('tab-current');
-  $(this).closest('div.tabs').find('div.content').hide().eq($(this).index()).slideDown(300);
-});
+    $tab.on('click', 'li:not(tab-current)', function() {
+        $(this).addClass('tab-current');
+        $(this).siblings().removeClass('tab-current');
+        $(this).closest('div.tabs').find('div.content').hide().eq($(this).index()).slideDown(300);
+    });
 });
 
 // part 2 - Tooltips
+$(function() {
 
-$(document).ready(function () {
+    $('.tooltip').hide();
 
-  var $input = $('input');
-  $input.hover (
-    function() {
-    $(this).siblings('.tooltip').animate(
-      {height:'+25px', opacity:0.7},100, function () {
-    });
-  },
-    function() {
-    $(this).siblings('.tooltip').animate(
-      {opacity:0},100);
-  });
+    function showTip(field) {
+        $(field).siblings('.tooltip').fadeIn(200)
+    }
 
-  var $help = $('button');
-  $help.on('click', function(e) {
-      $('.tooltip').animate(
-        {height:'+25px', opacity:0.7},400,function () {
+    $('input').hover( function() {
+        $('.tooltip').fadeOut();
+        showTip(this);
+    },
+      function () {
+        $('.tooltip').fadeOut();
       });
 
-  });
+    $('button').on('click', function(e) {
+        e.preventDefault();
+        $('.tooltip').fadeIn(500);
+    })
 });
