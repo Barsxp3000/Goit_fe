@@ -1,65 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: lightblue;
+  width: 741px;
+  height: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: #777;
 }
 
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-h1 {
-  text-align: center;
-  margin: 20px 0 20px;
-  text-transform: uppercase;
-  color: blue;
-  font-weight: bold;
-  font-size: 30px;
-  text-shadow: -4px -4px 2px rgba(101, 179, 129, 1);
+.carousel-hider {
+  width: 590px;
+  overflow: hidden;
+  float: left;
 }
 
 .carousel-list {
   list-style: none;
-  width: 8000px;
-  padding: 0;
+  width: 10000px;
+  padding: 0px;
   position: relative;
 }
 
 .carousel-element {
   display: block;
-  margin-right: 25px;
+  margin-right: 23px;
   float: left;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: darkblue;
-  text-transform: uppercase;
 }
 
 .carousel-element img {
-  max-width: 250px;
+  padding: 20px;
 }
 
-.carousel-hider {
-  width: 1100px;
-  overflow: hidden;
-  float: left;
+.carousel-element p {
+  text-align: center;
+  font-family: Tahoma;
+  color: #f6f6f6;
 }
 
-.carousel-arrow-left,
-.carousel-arrow-right {
+.carousel-arrow-left, .carousel-arrow-right {
   float: left;
   display: block;
   border: 1px solid grey;
-  background-color: lightgreen;
+  background-color: #eaaa19;
   padding: 5px;
-  margin-top: 200px;
+  margin-top: 50px;
+  font-family: Tahoma;
 }
 
-.carousel-arrow-left:hover,
-.carousel-arrow-right:hover {
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
   cursor: pointer;
-  background-color: blue;
+  background-color: #ece624;
 }
 
 .carousel-arrow-left {
@@ -70,14 +63,34 @@ h1 {
   margin-left: 25px;
 }
 
-.template {
-  text-align:center;
-  width: 600px;
-  height: 600px;
-  margin: 0 auto;
-  padding-top: 35px;
+.clearfix {
+  display: block;
+  content: '';
+  clear: both;
 }
 
-h3{
-  margin-top:15px;
+.profile {
+  margin: 0 auto;
+  padding: 55px 60px 60px;
+  color: black;
+  height: 480px;
+  width: 500px;
+  background-color: white;
+  font-size: 16px;
+}
+
+.photo {
+  margin: 0 auto;
+}
+
+.photo img {
+  display: block;
+  margin: 0 auto;
+  height: 140px;
+  width: 120px;
+}
+
+.title {
+  border-top: 2px solid #000;
+  margin: 16px auto;
 }
