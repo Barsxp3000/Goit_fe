@@ -12,20 +12,19 @@ function startPause() {
         document.getElementById('start').innerHTML = 'Cont..';
         document.getElementById('startPause').style.backgroundColor = "rgb(95, 244, 181)";
     }
-}
-
-function reset() {
-    running = 0;
-    time = 0;
-    document.getElementById('start').innerHTML = 'Start';
-    document.getElementById('time').innerHTML = '0:00:00';
-    document.getElementById('sec').innerHTML = '00';
-
-}
+};
+var reset = document.getElementById('reset');
+reset.onclick = function() {
+  running = 0;
+time = -4;
+document.getElementById('sec').innerHTML = '000';
+document.getElementById('start').innerHTML = 'Start';
+document.getElementById('time').innerHTML = '0:00:00';
+};
 
 function increment() {
-    if (running == 1) {
-        setTimeout(function() {
+    if (running != 0) {
+        setTimeout(function () {
             time += 4;
             var mins = Math.floor(time / 1000 / 60);
             var secs = Math.floor(time / 1000 % 60);
@@ -40,10 +39,13 @@ function increment() {
             }
             if (mili < 100) {
                 mili = '0' + mili
-            };
+            }
+            if (time == 0) {
+              mili = '0' + mili
+            }
             document.getElementById('time').innerHTML = hours + ":" + mins + ":" + secs;
-            document.getElementById('sec').innerHTML = mili + "";
+            document.getElementById('sec').innerHTML = mili;
             increment();
-        }, 1)
-    }
-}
+        }, 1);
+    };
+};
