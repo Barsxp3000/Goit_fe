@@ -1,34 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Smoke Shop HW 10</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-<head>
-  <meta charset="utf-8">
-  <title>HomeWork 9-10</title>
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.transitions.css">
+        <link rel="stylesheet" type="text/css" href="css/pagination.css">
+        <link rel="stylesheet" type="text/css" href="css/cusel.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-migrate-1.1.1.min.js"></script>
+        <!-- Carousel -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery.jcarousel.min.js"></script>
+        <script src="js/jcarousel.transitions.js"></script>
+        <script src="js/pagination.js"></script>
+        <!-- cuSel -->
+        <script src="js/cusel.js"></script>
+        <script src="js/jScrollPane.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/changeCheck.js"></script>
+        <!-- dropdown menu -->
+        <script src="js/dropdownMenu.js"></script>
 
-<div id="carousel" >
-<figure id="spinner">
-<img src="img/1.jpg" alt="1">
-<img src="img/2.jpg" alt="1">
-<img src="img/3.jpg" alt="1">
-<img src="img/4.jpg" alt="1">
-<img src="img/5.jpg" alt="1">
-<img src="img/6.jpg" alt="1">
-<img src="img/7.jpg" alt="1">
-<img src="img/8.jpg" alt="1">
+        <script src="js/script.js"></script>
 
-</figure>
-<span class="ss-icon left" onclick="galleryspin('-')">&lt;</span>
-<span style="float:right" class="ss-icon right" onclick="galleryspin('')">&gt;</span>
-</div>
+    </head>
 
-<script src="js/script.js"></script>
-</body>
+    <body>
+        <div class="wrapper">
+            <a class="logo" href="#" alt="Smoke Shop">
+                <img class="logo-img" src="images/logo.png">
+            </a>
 
+            <nav>
+                <ul class="main-menu clearfix">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="dropdown arrow">
+                        <a href="#">E Sigarette</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Starter Kits</a>
+                            </li>
+                            <li>
+                                <a href="">Vaporizers</a>
+                            </li>
+                            <li>
+                                <a href="">Batteries Kits</a>
+                            </li>
+                            <li class="dropdown arrow-right">
+                                <a href="">Mods Kits</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="">Joyetech eGo One Kits</a>
+                                    </li>
+                                    <li>
+                                        <a href="">E-Cigarette Starter Kits</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown arrow">
+                        <a href="#">Accessories</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Batteries & Chargers</a>
+                            </li>
+                            <li>
+                                <a href="">Cases & Holders</a>
+                            </li>
+                            <li>
+                                <a href="">Tanks & Refills</a>
+                            </li>
+                            <li>
+                                <a href="">Parts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">E-Liquid</a>
+                    </li>
+                    <li>
+                        <a href="#">ContactUs</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="images/slides/img1.jpg" alt=""/></li>
+                        <li><img src="images/slides/img2.jpg" alt=""/></li>
+                        <li><img src="images/slides/img3.jpg" alt=""/></li>
+                        <li><img src="images/slides/img4.jpg" alt=""/></li>
+                        <li><img src="images/slides/img5.jpg" alt=""/></li>
+                        <li><img src="images/slides/img6.jpg" alt=""/></li>
+                        <li><img src="images/slides/img7.jpg" alt=""/></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination" data-jcarouselpagination="true">
+                    <a href="#1"></a>
+                    <a href="#2"></a>
+                    <a href="#3"></a>
+                    <a href="#4"></a>
+                    <a href="#5"></a>
+                    <a href="#6"></a>
+                    <a href="#7"></a>
+                </p>
+            </div>
+
+            <form class="clearfix">
+                <div class="wrapper-select">
+                    <div class="lineForm3">
+                        <label>Producing country:</label>
+                        <select id="country" name="country">
+                            <option value="0" selected="selected">Choise One</option>
+                            <option value="1">USA</option>
+                            <option value="2">China</option>
+                            <option value="3">Japan</option>
+                            <option value="4">Poland</option>
+                            <option value="2">Ukraine</option>
+                        </select>
+                    </div>
+
+                    <div class="lineForm">
+                        <label>E Sigarrete</label>
+                        <select class="wid100" id="search_brand" name="search_brand">
+                            <option value="0" selected="selected">Select All</option>
+                            <option value="1">Wingle</option>
+                            <option value="2">Denshi Tabaco</option>
+                            <option value="3">ESmoore</option>
+                            <option value="4">Pons</option>
+                            <option value="5">Nickols</option>
+                            <option value="6">Joye Ego</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="wrapper-checkbox">
+                    <p class="checkbox-title">Battery:</p>
+                    <div>
+                        <label for="ch1">650mah</label>
+                        <span class="niceCheck" disabled></span>
+                    </div>
+                    <div>
+                        <label for="ch2">900mah</label>
+                        <span class="niceCheck"></span>
+                    </div>
+                    <div>
+                        <label for="ch3">1350mah</label>
+                        <span class="niceCheck"></span>
+                    </div>
+                    <div>
+                        <label for="ch4">1600mah</label>
+                        <span class="niceCheck"></span>
+                    </div>
+                    <div>
+                        <label for="ch5">2100mah</label>
+                        <span class="niceCheck"></span>
+                    </div>
+                    <div>
+                        <label for="ch6">3000mah</label>
+                        <span class="niceCheck"></span>
+                    </div>
+                </div>
+
+                <div class="wrapper-checkbox checkbox-pure-css">
+                    <p class="checkbox-title">e Liquid:</p>
+                    <div>
+                        <input type="checkbox" name="type" id="type1">
+                        <label for="type1">10ml eLiquid</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type" id="type2">
+                        <label for="type2">20ml eLiquid</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type" id="type3">
+                        <label for="type3">50ml eLiquid</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type" id="type4">
+                        <label for="type4">100ml eLiquid</label>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </body>
 </html>
