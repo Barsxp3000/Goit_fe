@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+}
+
+.logo {
+    height: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
+.wrapper {
+    margin: 30px auto;
+    min-height: 200px;
+}
+
+.bar {
+    width: auto;
+    background: rgb(228, 228, 228);
+    padding: 10px 40px;
+}
+
+#requre {
+    width: 60%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 3px solid #b5b7b6;
+    border-radius: 10px;
+    font-family: Tahoma, sans-serif;
+}
+
+#text:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border: 3px solid #000;
+    transition: 0.5s;
+}
+
+#search {
+    position: relative;
+    top: 2px;
+    background: url('../img/g_key.png') no-repeat center;
+    background-size: 20%;
+    background-position-x: 7px;
+    width: 190px;
+    height: 45px;
+    text-align: right;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid #b5b7b6;
+    border-radius: 10px;
+}
+
+#search:hover {
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border: 3px solid green;
+    transition: 0.4s;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.res {
+    margin: 10px;
+}
